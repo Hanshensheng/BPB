@@ -25,12 +25,12 @@ This section provides the subscription link for normal configurations (without F
 > [!TIP]
 > What is the **Best Ping** config? This config combines all the panel configs and checks every 3 minutes which config has the best speed and connects to it! If you have entered a clean IP, it will also be added to Best Ping. This type of config is available in the Fragment subscription and as a single config for Nekoray, which will be explained later.
 
-This link provides you with 6 configurations. (You can increase the number of configurations from the Clean IP and Port settings). Now, what is the difference between these 6 configs? How can we increase their number? Further explanations and settings are provided [here](#3-5--clean-ip-settings) and [here](#3-6--port-settings).
+This link provides you with 6 configurations. (You can increase the number of configurations from the Clean IP and Port settings). Now, what is the difference between these 6 configs? How can we increase their number? Further explanations and settings are provided [here](#4-5--clean-ip-settings) and [here](#4-6--port-settings).
 > [!CAUTION]
 > To use these configs, disable Mux in the settings of any application you are using.
 
 > [!WARNING]
-> Using this Worker will constantly change your device's IP, so do not use it for tasks such as trading, PayPal, or even websites like Hetzner that are sensitive to IP changes, as there is a possibility of being banned. We have provided two solutions to fix the IP issue: Proxy IP at startup and Proxy Chain, which are explained further [here](#3-2--chain-proxy-settings).
+> Using this Worker will constantly change your device's IP, so do not use it for tasks such as trading, PayPal, or even websites like Hetzner that are sensitive to IP changes, as there is a possibility of being banned. We have provided two solutions to fix the IP issue: Proxy IP at startup and Proxy Chain, which are explained further [here](#4-2--chain-proxy-settings).
 <br><br>
 
 ## 2 - Fragment Subscription and Configs
