@@ -3,7 +3,7 @@
 First, download the Worker code from [here](https://github.com/bia-pain-bache/BPB-Worker-Panel/releases/latest/download/worker.js) and upload the file to your Cloudflare Workers dashboard (since the code has become very extensive, copying and pasting on a mobile phone has become very difficult, upload it as shown in the image below). On mobile, open the side menu, long press, and upload the file.
 
 <p align="center">
-  <img src="docs/assets/images/Worker_mobile_upload.jpg">
+  <img src="assets/images/Worker_mobile_upload.jpg">
 </p>
 
 The panel works with its default UUID and Proxy IP, and you can continue with these settings. However, if you want to make changes, go to the [Advanced Settings](#advanced-settings-optional) section and return here.
@@ -12,13 +12,13 @@ Finally, `Save and Deploy` the Worker.
 Now, return to the Workers dashboard and follow these steps:
 
 <p align="center">
-  <img src="docs/assets/images/Navigate_worker_dash.jpg">
+  <img src="assets/images/Navigate_worker_dash.jpg">
 </p>
 
 Navigate to the `KV` section:
 
 <p align="center">
-  <img src="docs/assets/images/Nav_dash_kv.jpg">
+  <img src="assets/images/Nav_dash_kv.jpg">
 </p>
 
 In the KV section, click `Create a namespace` and enter a name of your choice, such as Test, then click `Add`.
@@ -26,7 +26,7 @@ In the KV section, click `Create a namespace` and enter a name of your choice, s
 Go back to the `Workers & Pages` section from the left menu, open the Worker you created, go to `Settings`, and select `Variables`. Scroll down to find `KV Namespace Bindings`, click `Add binding`, and select the KV you created from the dropdown on the right (in this example, it was Test). What's important is the dropdown on the left; make sure to set its value to `bpb` and then `Save and Deploy`.
 
 <p align="center">
-  <img src="docs/assets/images/Bind_kv.jpg">
+  <img src="assets/images/Bind_kv.jpg">
 </p>
 
 For example, if your Worker domain is worker-polished-leaf-d022.workers.dev, add `panel/` at the end to access the panel. Example:
@@ -58,7 +58,7 @@ Open this link (also included in line 12 of the Worker code), which shows a list
 >[Proxy IP](https://www.nslookup.io/domains/bpb.yousef.isegaro.com/dns-records/)
 
 <p align="center">
-  <img src="docs/assets/images/Proxy_ips.jpg">
+  <img src="assets/images/Proxy_ips.jpg">
 </p>
 
 The initial text in line 14 looks like this:
