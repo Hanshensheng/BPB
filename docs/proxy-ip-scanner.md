@@ -1,21 +1,22 @@
-<h1 align="center">راهنمای اسکنر Proxy IP</h1>
+<h1 align="center">Proxy IP Scanner Guide</h1>
 
 > [!CAUTION]
-> این اسکریپت رو چینی‌ها نوشتن و وقتی دانلود کنید و از زیپ خارج کنید ویروسی تشخیص داده میشه، بنابراین اگر روی کامپیوتر اطلاعات حساسی دارید توصیه نمیشه. البته میتونید در محیط ایزوله مثل VMWare هم اجراش کنید، مطمئن‌تره)
+> This script is written by Chinese developers, and upon downloading and extracting the zip file, it is detected as a virus. Therefore, it is not recommended to use it if you have sensitive information on your computer. You can run it in an isolated environment like VMware for safety.
 
 
-## قدم اول - دانلود پروژه
-اول از اینجا کل پروژه رو دانلود کنید [Github](https://github.com/bia-pain-bache/BPB-Worker-Panel/archive/refs/heads/main.zip)
+## Step 1 - Download the Project
+First, download the entire project from here: [Github](https://github.com/bia-pain-bache/BPB-Worker-Panel/archive/refs/heads/main.zip)
 <br><br>
-## قدم دوم - خاموش کردن موقتی Windows Security
-وارد Windows Security بشید و بعد قسمت Virus & threat protection و Manage Settings رو بزنید. در این قسمت همه‌ی کلیدا رو موقتا خاموش کنید. بعد از اسکن باید به حالت قبل برگردونید
+## Step 2 - Temporarily Disable Windows Security
+Go to Windows Security, then Virus & threat protection, and click on Manage Settings. In this section, temporarily turn off all the toggles. Remember to turn them back on after the scan.
 <br><br>
-## قدم سوم - اجرا
-حالا پوشه‌ی پروژه که دانلود کرده بودید رو از حالت زیپ خارج کنید، داخلش یه زیپ دیگه هم هست به اسم CF优选反代IP(电脑版) که فولدر اسکنر هست، اینم از زیپ خارج کنید.
-وقتی وارد این پوشه میشید یه فایل به اسم 批处理启动iptest هست، اجراش کنید. از اینجا به بعد چندتا سوال به زبون چینی میپرسه که من به ترتیب جواباشو اینجا میذارم. دقت کنید برای اسکن به هیچ VPNی متصل نباشید.
-جواب سوالا:
+## Step 3 - Run the Scanner
+Now, extract the project folder you downloaded. Inside, you will find another zip file named "CF优选反代IP(电脑版)" which contains the scanner folder. Extract this one as well.
+Upon opening this folder, you'll see a file named "批处理启动iptest". Run it. From here on, it will ask a few questions in Chinese. I've provided the answers in order below. Make sure you are not connected to any VPN during the scan.
 
-<ol dir="rtl">
+Here are the answers to the questions:
+
+<ol>
   <li><strong>1 - Enter</strong></li>
   <li><strong>Enter</strong></li>
   <li><strong>Enter</strong></li>
@@ -26,8 +27,8 @@
   <li><strong>0 - Enter</strong></li>
 </ol>
 
-حالا باید صبر کنید تا اسکن انجام بشه و تستاشو بگیره. بعدش Enter میزنید و اون پنجره بسته میشه. نتیجه‌ها رو میریزه داخل یه فایل به اسم ip توی همین پوشه. بازش کنید یه تعداد IP و Ping و تست سرعت میبینید، حواستون باشه اونایی که تست سرعتشون 0 KB/s هست رو انتخاب نکنید. تو آموزش‌ها هم توضیح دادم که چجوری میتونید Proxy IP بذارید، هم از طریق پنل میشه هم داشبورد کلادفلر.
+Now you need to wait for the scan to complete and for it to run its tests. Afterward, press Enter, and the window will close. The results will be saved in a file named "ip" within the same folder. Open it to see a list of IPs, their Ping, and speed test results. Avoid selecting IPs with a speed test result of 0 KB/s. In the tutorials, I've explained how to set up Proxy IPs, both through the panel and the Cloudflare dashboard.
 
-## قدم چهارم - فعال کردن Windows Security
+## Step 4 - Enable Windows Security
 
-حتما Virus & threat protection رو به حالت اول برگردونید، با این کار اون پوشه رو ویروسی تشخیص میده و پاکش میکنه به احتمال زیاد.
+Make sure to turn Virus & threat protection back on. This will likely cause the folder to be detected as a virus and subsequently deleted.
