@@ -13,7 +13,7 @@ Create an account on [Github](https://github.com/signup) (you only need an email
 Now go to the Github address [BPB-Worker-Panel](https://github.com/bia-pain-bache/BPB-Worker-Panel) and click the Fork button at the top.
 <br><br>
 <p align="center">
-  <img src="docs/assets/images/Fork_repo.jpg">
+  <img src="assets/images/Fork_repo.jpg">
 </p>
 
 On the next page, don't change anything and click Create Fork. That's it for Github.
@@ -25,13 +25,13 @@ If you don’t have a Cloudflare account, create one [here](https://dash.cloudfl
 Now, in your Cloudflare account, go to the `Workers and Pages` section from the left menu (where you previously created Workers) and click `Create Application`. This time, choose `Pages`:
 
 <p align="center">
-  <img src="docs/assets/images/Pages_application.jpg">
+  <img src="assets/images/Pages_application.jpg">
 </p>
 
 Here, click `Connect to Git` and proceed to the next step:
 
 <p align="center">
-  <img src="docs/assets/images/Connect_to_git.jpg">
+  <img src="assets/images/Connect_to_git.jpg">
 </p>
 
 Click on `BPB-Worker-Panel` to activate it and then click `Begin Setup`. In the next step, there is a `Project Name` field that will be the domain of your panel, so make sure to change it to a name of your choice. Now, there's a difference from Workers: if you want to change the UUID or Proxy IP, you cannot modify it in the code anymore. If you wish to use the default settings of the panel, that's fine, otherwise, read the [Advanced Settings](#advanced-settings-optional) section before proceeding.
@@ -43,7 +43,7 @@ Now you can click `Save and Deploy`. It will take a few seconds for the project 
 From the left menu, go to the KV section:
 
 <p align="center">
-  <img src="docs/assets/images/Nav_dash_kv.jpg">
+  <img src="assets/images/Nav_dash_kv.jpg">
 </p>
 
 Click on `Create a namespace`, give it a name of your choice, and click Add.
@@ -51,13 +51,13 @@ Click on `Create a namespace`, give it a name of your choice, and click Add.
 Go back to the `Workers and Pages` section and enter the Pages project you created. Go to the `Settings` and then `Functions`:
 
 <p align="center">
-  <img src="docs/assets/images/Settings_functions.jpg">
+  <img src="assets/images/Settings_functions.jpg">
 </p>
 
 Here, like in Workers, find the `KV namespace bindings` section on the page, click `Add binding`, and set the `Variable name` to `bpb` (exactly as written) and select the KV namespace you created in the second step. Click `save`.
 
 <p align="center">
-  <img src="docs/assets/images/Pages_bind_kv.jpg">
+  <img src="assets/images/Pages_bind_kv.jpg">
 </p>
 
 That’s it for KV. Now, you just need to deploy again to apply the KV changes.
@@ -65,13 +65,13 @@ That’s it for KV. Now, you just need to deploy again to apply the KV changes.
 From the top bar, return to `Deployment` and go to `view details` under the `Production` section:
 
 <p align="center">
-  <img src="docs/assets/images/Pages_production_details.jpg">
+  <img src="assets/images/Pages_production_details.jpg">
 </p>
 
 Now in the `Deployment detail` section, click the `Manage Deployment` button and then `Retry deployment`:
 
 <p align="center">
-  <img src="docs/assets/images/Pages_retry_deployment.jpg">
+  <img src="assets/images/Pages_retry_deployment.jpg">
 </p>
 
 Wait a few seconds for the process to complete, and you’re done!
@@ -100,7 +100,7 @@ We have a problem where the code uses a large number of Proxy IPs by default, ra
 To change UUID and Proxy IP on this page (Step 3, where you select BPB-Worker-Panel), scroll down and open the `Environment variables (advanced)` section:
 
 <p align="center">
-  <img src="docs/assets/images/Pages_env_vars.jpg">
+  <img src="assets/images/Pages_env_vars.jpg">
 </p>
 
 Here, you need to specify the values. Click `Add variable` once and enter `UUID` in the first field with uppercase letters. Then, get a UUID from [here](https://www.uuidgenerator.net/) and enter it in the second field.
@@ -110,7 +110,7 @@ Now, click `Add variable` again, enter `PROXYIP` in the first field with upperca
 >[Proxy IP](https://www.nslookup.io/domains/bpb.yousef.isegaro.com/dns-records/)
 
 <p align="center">
-  <img src="docs/assets/images/Proxy_ips.jpg">
+  <img src="assets/images/Proxy_ips.jpg">
 </p>
 <br>
 
@@ -118,7 +118,7 @@ Now, click `Add variable` again, enter `PROXYIP` in the first field with upperca
 One advantage of Pages over Worker is that when an update is released for the code, you no longer need to download a new version of worker.js and start from scratch! You don't need to interact with Cloudflare for updates. Simply go to your Github repository `BPB-Worker-Panel` and click `Sync fork`:
 
 <p align="center">
-  <img src="docs/assets/images/Sync_fork.jpg">
+  <img src="assets/images/Sync_fork.jpg">
 </p>
 
 Then click `Update branch` and that’s it. The good part is that Cloudflare Pages will automatically detect this and update itself within about 1 minute.
